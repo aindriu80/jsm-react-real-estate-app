@@ -60,7 +60,8 @@ const Property = ({
           justifyContent="space-between"
           w="250px"
           color="blue.400">
-          {rooms} <FaBed /> | <FaBath /> | {millify(area)} sqmt <BsGridFill />
+          {rooms} <FaBed /> |{baths} <FaBath /> | {millify(area)} sqmt{' '}
+          <BsGridFill />
         </Flex>
         <Text fontSize="lg">
           {title.length > 30 ? `${title.substring(0, 30)}...` : title}
