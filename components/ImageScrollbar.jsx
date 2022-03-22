@@ -41,7 +41,7 @@ const ImageScrollbar = ({ data }) => (
     {data.map((item) => (
       <Box
         width="910px"
-        itemId={item.id}
+        itemID={item.id}
         overflow="hi"
         key={item.id}
         padding="1">
