@@ -11,7 +11,7 @@ import noresult from '../assets/noresult.svg'
 import { fetchApi, baseUrl } from '../utils/fetchApi'
 
 const Search = ({ properties }) => {
-  const [searchFilters, setSearchFilter] = useState(false)
+  const [searchFilters, setSearchFilters] = useState(false)
   const router = useRouter()
   return (
     <Box>
@@ -25,7 +25,7 @@ const Search = ({ properties }) => {
         fontSize="lg"
         justifyContent="center"
         alignItems="center"
-        onClick={() => setSearchFilter((prevFilters) => !prevFilters)}>
+        onClick={() => setSearchFilters((prevFilters) => !prevFilters)}>
         <Text>Search Property by Filters</Text>
         <Icon paddingLeft="2" w="7" as={BsFilter} />
       </Flex>
